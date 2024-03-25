@@ -48,25 +48,8 @@
                                             </button>
                                         </div> 
 
-                                        {{-- data-bs-toggle="modal" data-bs-target="#eliminar" --}}
-                                        {{-- <div class="modal" id="eliminar" tabindex="-1">
-                                            <div class="modal-dialog">
-                                              <div class="modal-content">
-                                                <div class="modal-header">
-                                                  <h5 class="modal-title">¿Estas seguro de eliminar a {{$empleado->name.' '.$empleado->surname}}?</h5>
-                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                  <p>Si lo eliminas, no podras recuperarlo.</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                                  <button type="button" class="btn btn-primary" onclick="location.href='{{route('deleteEmployee', ['id'=> $empleado->id])}}'">Eliminar</button>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        --}}
+                                    
+                                        
                                     </li>
                                     
                                 </div>
