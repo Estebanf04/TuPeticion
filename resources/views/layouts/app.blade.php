@@ -20,6 +20,7 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
@@ -27,8 +28,7 @@
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     TuPeticion!
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">   
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -80,7 +80,6 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    
                                     <a href="
                                     @if(Auth::user()->role == 'admin')
                                     {{route('profile')}}
@@ -106,11 +105,9 @@
                 </div>
             </div>
         </nav>
-
         <main class="py-4">
             @yield('content')
-        </main>
-        
+        </main> 
     </div>
     <footer>
         <p>Esteban Fandos &copy 2024</p>

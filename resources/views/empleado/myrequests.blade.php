@@ -7,6 +7,7 @@
             <div class="card encabezado"><div class="card-header">{{ __('Mis peticiones')}}</div></div>
             <div class="card elposta">
                 <div class="card-body">
+
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -33,23 +34,18 @@
                                                 <p style="color:rgb(0, 153, 255); font-weight:bold">Pendiente</p>
                                             @endif
                                         </div>
-
                                     </div>
-
                                         <div class="button-verpeticion"> <!-- Boton que te envia a seccion para ver los datos de la petición -->
                                             <button class="btn btn-primary seespecificrequest" onclick="location.href='{{route('seeMyRequest', ['id' => $peticion->id])}}'">
                                                 Ver petición
                                             </button>
                                         </div> 
-                                
                                     </li>
                                 </div>
                             @endforeach
                         </ul>  
                         @endif
-
                      </div>
-
                      <div class="clearfix">
                         {{$peticiones->links()}}  <!-- Paginación de peticiones pendientes (5 por pagina) -->
                     </div>

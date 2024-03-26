@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+
             @if(Session::has('message'))
                 <script>
                     swal("¡Perfecto!", "{{ Session::get('message') }}", 'success',{
@@ -12,6 +13,7 @@
                     })
                 </script>
             @endif 
+            
              <div id="contenedoropciones">
                 <div class="card opcion" style="cursor: pointer" onclick="location.href='{{route('createRequest')}}'">
                     <div class="card-body">
