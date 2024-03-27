@@ -1,6 +1,6 @@
 #app{
     min-height: 96vh;
-    background-color: #080818;
+    background-color: rgb(2, 5, 14);
 }
 
 footer{
@@ -33,11 +33,11 @@ footer{
 }
 
 .navbar{
-    background-color: #2b303f;
+    background-color: #000000;
 }
 
 footer{
-    background-color: #2b303f;
+    background-color: #000000;
 }
 
 footer p{
@@ -49,12 +49,14 @@ footer p{
 }
  
 #contenedoropciones .opcion{
-    background-color: #3e5c75;
+    background-color: rgb(5, 9, 19);
+    border: 1px solid #1d2331;
+    border-radius: 20px;
     transition: 1s;
 }
 
 #contenedoropciones .opcion:hover{
-    background-color: #313a52;
+    background-color:  rgb(12, 19, 37);
 }
 
 #contenedoropciones .opcion .card-body{
@@ -72,16 +74,16 @@ footer p{
 }
 
 .dropdown .dropdown-menu-end{
-    background-color: #2b303f;
+    background-color: #1b1f2c;
 }
 
 .dropdown .dropdown-menu-end a{
     color: white;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .dropdown .dropdown-menu-end a:hover{
-    background-color: #626775;
+    background-color: #292e3b;
 }
 
 
@@ -95,7 +97,7 @@ footer p{
 .encabezado{
     margin-bottom: 3vh;
     border-style: none;
-    background-color: #3e4c74 !important;
+    background-color: #292e3b !important;
     color: white;
 }
 
@@ -105,8 +107,9 @@ footer p{
 }
 
 .elposta{
-    background-color: #2b303f !important; 
-    border-radius: 0 !important;
+    background-color: transparent !important; 
+    border: 1px solid #1d2331 !important;
+    border-radius: 5px !important;
     
     
 }
@@ -149,6 +152,12 @@ footer p{
 .elposta .datos p{
     color: rgb(230, 230, 230);
     font-size: 16px;
+}
+
+.createemployee{
+    background-color: rgb(1, 59, 1) !important;
+    border-style: none !important;
+    border-radius: 0 !important;
 }
 
 .decision{

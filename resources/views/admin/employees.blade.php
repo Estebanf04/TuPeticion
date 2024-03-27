@@ -23,7 +23,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <button class="btn btn-success yesrequest" onclick="location.href='{{route('createEmployee')}}'">Nuevo empleado</button>
+                        <button class="btn btn-success createemployee" onclick="location.href='{{route('createEmployee')}}'">Nuevo empleado</button>
 
                         <div class="contenidopeticionespendientes enempleados">
                             @if($empleados -> isEmpty())  
