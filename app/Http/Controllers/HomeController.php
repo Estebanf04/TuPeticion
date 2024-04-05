@@ -13,8 +13,7 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-
-    public function index()     //---- Redireccion segun su rol
+    public function index()    
     {
         if(Auth::check() && Auth::user()->role == 'admin'){
         return redirect()->route('adminhome');

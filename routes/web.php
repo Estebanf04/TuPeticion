@@ -19,15 +19,13 @@ Auth::routes();
     Route::get('/home/admin/myprofile', function () { return view('admin.profile'); })->name('profile')->middleware('auth', 'admin');
     Route::get('/home/employee/myprofile', function () { return view('admin.profile'); })->name('profileempleado')->middleware('auth', 'employee');
 
-
-
 //Rutas administrador
 
 //Rutas administrador - Sesion peticiones
     Route::get('/home/admin/peticiones', [AdminController::class, 'showRequest'])->name('showRequest');
     Route::get('/home/admin/peticiones/{id}', [AdminController::class, 'seeSpecificRequest'])->name('seeSpecificRequest');
     Route::get('/home/admin/peticiones/{id}/save', [AdminController::class, 'acceptSpecificRequest'])->name('acceptSpecificRequest');
-    Route::get('/home/admin/peticiones/{id}/delete', [AdminController::class, 'deleteSpecificRequest'])->name('deleteSpecificRequest');
+    Route::get('/home/admin/peticiones/{id}/delete', [AdminController::class, 'denySpecificRequest'])->name('denySpecificRequest');
     Route::get('/home/admin/changepassword', [AdminController::class, 'changePassword'])->name('changePassword');
     Route::post('/home/admin/savechange', [AdminController::class, 'saveChangePassword'])->name('saveChange');
 
